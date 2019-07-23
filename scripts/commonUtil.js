@@ -18,3 +18,16 @@ function validateForm() {
         return false;
     }
 };
+
+function showPizzaLine() {
+    document.getElementById('comeforpizza').innerHTML = '<i>Come for pizza - stay for the wings!' +
+        'Best known for our finest ingredients and Gourmet Pizza.</i>';
+}
+
+function showOfferOnWeekdays() {
+    var today = new Date().getDay();
+    if (today >= 1 && today <= 5) {
+        document.getElementById('showThisOfferOnWeekdays').innerHTML = '<h3>Add a small order of fries to any sandwich' +
+            'Just .99 Cents</h3>';
+    }
+}

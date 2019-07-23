@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onload="showOfferOnWeekdays()">
         <div id="headerdiv">
                 <div id="headerdivleftsideimg">
                         <img src="images/logoforheader.png" alt="logo for header" width="289" height="60">
@@ -36,13 +36,57 @@
 
         <div id=burgersandsandwichesdiv style="background: white; margin: 50px">
                 <h1 style="color: red"><u>Burgers & Sandwiches</u></h1>
-                <div style="text-align: center; margin: 20px">
-                        <h3>Add a small order of fries to any sandwich
-                                Just .99 Cents</h3>
+                <div id="showThisOfferOnWeekdays" style="text-align: center; margin-left: 20px; margin-right: 20px">
+                       
                 </div>
-                <div style="margin: 50px">
-                        <img src="images/burgersinmenuandprices.png" alt="Burger Prices">
+                <div style="float: left; background: white">
+                        <div style="float: left; margin: 60px">
+                                <div
+                                        style="color: rgb(191,162,101); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                                        <h4>ZINGER BURGER</h4>
+                                        <div class="clear"></div>
+                                        <div style="float: left">
+                                                <img src="images/zingerburger.png" alt="zingerburger">
+                                        </div>
+                                        <div style="float: right">
+                                                <p style="color: black"> &nbsp; &nbsp; Well seasoned fried chicken patty
+                                                </p>
+                                                <p style="color: black"> &nbsp; &nbsp; layered with our special homemade
+                                                        sauce</p>
+                                                <p style="color: black"> &nbsp; &nbsp; good old mayo with lettuce and
+                                                        onions on a </p>
+                                                <p style="color: black"> &nbsp; &nbsp; seasoned bun.</p>
+                                                <p style="color: red">&nbsp; &nbsp; $5.99</p>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
+                <div style="float: left; background: white">
+                        <div style="float: left; margin: 60px">
+                                <div
+                                        style="color: rgb(191,162,101); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                                        <h4>BUN KABAB</h4>
+                                        <div class="clear"></div>
+                                        <div style="float: left">
+                                                <img src="images/bunkabab.png" alt="bunkabab">
+                                        </div>
+                                        <div style="float: right">
+                                                <p style="color: black"> &nbsp; &nbsp; A tradional Pakistani burger. A
+                                                        well done beef
+                                                </p>
+                                                <p style="color: black"> &nbsp; &nbsp; patty covered with home made
+                                                        spices,</p>
+                                                <p style="color: black"> &nbsp; &nbsp; topped with some veggies and a
+                                                </p>
+                                                <p style="color: black"> &nbsp; &nbsp; special green sauce (chutni).</p>
+                                                <p style="color: red">&nbsp; &nbsp; $5.99</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div style="float: left; background: white; height: 280px; width: 66px">
+                </div>
+        </div>
         </div>
 
         <div class="clear">
@@ -104,7 +148,7 @@
                 </div>
         </footer>
 
-
+        <script src="scripts/commonUtil.js"></script>
 </body>
 
 </html>
