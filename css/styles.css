@@ -37,6 +37,11 @@ body {
     margin: 10px;
 }
 
+#headerdivrightsidenavbar6 {
+    float: right;
+    margin: 10px;
+}
+
 #headerdivrightsidenavbar1 a {
     text-decoration: none;
     color: black;

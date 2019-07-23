@@ -71,7 +71,7 @@ function pickupAtTheStore() {
 $( document ).ready(function() {
     var date = new Date();
     if(date.getHours() >= 9 && date.getHours() <= 10){
-        $("#headerdiv").append("<p> Today only! 15 % off! Order Now! </p>");
+        $("#headerdiv").append("<h3 style=\"color: red;\"> For right now only! 15 % off! Order Now! </h3>");
     }
 });
 
