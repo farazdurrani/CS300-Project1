@@ -70,8 +70,8 @@ function pickupAtTheStore() {
 // A function that shows special discount everyday --> 15 percent off everyday between 10am till 11am
 $( document ).ready(function() {
     var date = new Date();
-    if(date.getHours() >= 9 && date.getHours() <= 10){
-        $("#headerdiv").append("<h3 style=\"color: red;\"> For right now only! 15 % off! Order Now! </h3>");
+    if(date.getHours() == 9 || date.getHours() == 10){
+        $("#headerdiv").append("<h3 style=\"color: red;\"> For right now only! 15 % extra off your order!</h3>");
     }
 });
 
