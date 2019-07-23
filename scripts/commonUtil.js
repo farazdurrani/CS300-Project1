@@ -1,3 +1,5 @@
+// Faraz Durrani
+
 //this function is called in contact.html
 //Function that makes sure neccessary elements are filled when user is submitting feedback
 function validateForm() {
