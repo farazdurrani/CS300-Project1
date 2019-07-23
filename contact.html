@@ -6,7 +6,6 @@
         <title>Project 1 Draft</title>
         <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" href="css/styles.css">
-
         <meta name="description" content="Project 1 Draft">
 
         <meta name="keywords" content="Burgers, Pizza, Food, Fast Food">
@@ -38,20 +37,29 @@
 
         <div id="formdiv" style="color: white; margin-top: 50px; margin-left: 50px; font-size: 20px">
                 <h4>To Send a message directly, fill out the form below:</h4>
-                <form action="#">
-                        <br />
-                        Name: <br />
-                        <input type="text">
-                        <br />
-                        Message: <br />
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <br />
-                        <input type="button" value="Submit">
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                </form>
+                <article>
+                        <section>
+                                <form method="GET" action="menu.html" onsubmit="return validateForm()" >
+                                        <div>
+                                                <br />
+                                                Name: <br />
+                                                <input type="text" id="contactName">
+                                                <br />
+                                                Email: <br />
+                                                <input type="email" id="contactEmail" required=true>
+                                                <br />
+                                                Message: <br />
+                                                <textarea name="" id="contactMessage" cols="30" rows="10"></textarea>
+                                                <br />
+                                                <input type="submit" value="Submit"/>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                        </div>
+                                </form>
+                        </section>
+                </article>
         </div>
 
         <footer id=footerdiv style="background-color: black; height: 100px; margin-left: 30px; margin-right: 30px">
@@ -90,8 +98,7 @@
                         <img src="images/creditcardpicture" alt="">
                 </div>
         </footer>
-
-
+        <script src="scripts/commonUtil.js"></script>
 </body>
 
 </html>

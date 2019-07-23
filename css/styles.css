@@ -1,5 +1,6 @@
 body {
     background-color: rgb(231,147,35);
+    font-family: "Times New Roman", Times, serif;
 }
 #headerdiv {
     width: 90%;
@@ -16,7 +17,6 @@ body {
 #headerdivrightsidenavbar {
     float: right;
     margin: 10px;
-    font-family: "Droid Sans, sans-serif";
 }
 
 #headerdivrightsidenavbar a {
