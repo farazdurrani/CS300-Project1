@@ -37,7 +37,7 @@ function showPizzaLine() {
 function showOfferOnWeekdays() {
     var today = new Date().getDay();
     if (today >= 1 && today <= 5) {
-        document.getElementById('showThisOfferOnWeekdays').innerHTML = '<h3>Add a small order of fries to any sandwich' +
+        document.getElementById('showThisOfferOnWeekdays').innerHTML = '<h3>Add a small order of fries to any sandwich <br />' +
             'Just .99 Cents</h3>';
     }
 }
