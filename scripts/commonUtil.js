@@ -90,9 +90,10 @@ function pickupAtTheStore() {
         alert(content);
         document.getElementById('zingerburgercheckbox').checked = false;
         document.getElementById('bunkababcheckbox').checked = false;
-        document.getElementById('bunkababcheckbox').checked = false;
-        document.getElementById('bunkababcheckbox').checked = false;
-        document.getElementById('bunkababcheckbox').checked = false;
+        document.getElementById('biharikababcheckbox').checked = false;
+        document.getElementById('gyropitacheckbox').checked = false;
+        document.getElementById('pitaspicychickencheckbox').checked = false;
+        document.getElementById('cartemptymessage').innerHTML = "Your cart is empty. Please add items below";
         document.getElementById('totalprice').value = 0;
     }
 }
@@ -120,7 +121,6 @@ function changePrice() {
 
     var zbcb = document.getElementById('zingerburgercheckbox').checked;
     var bkcb = document.getElementById('bunkababcheckbox').checked;
-
     var bhcb = document.getElementById('biharikababcheckbox').checked;
     var gpcb = document.getElementById('gyropitacheckbox').checked;
     var psccb = document.getElementById('pitaspicychickencheckbox').checked;
@@ -145,6 +145,12 @@ function changePrice() {
 
     if (psccb) {
         pprice += pitaspicychickenprice;
+    }
+
+    if(pprice > 0) {
+        document.getElementById('cartemptymessage').innerHTML = "";
+    } else {
+        document.getElementById('cartemptymessage').innerHTML = "Your cart is empty. Please add items below";
     }
 
     document.getElementById('totalprice').value = pprice;
