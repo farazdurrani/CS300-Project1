@@ -35,18 +35,43 @@
                 </div>
 
 
-                <div style="float: left; color: white; margin-top: 50px; margin-left: 50px">
+                <div
+                        style="float: left; color: white; margin-top: 50px; margin-left: 50px; font-family: 'Trebuchet MS', Helvetica, sans-serif; text-shadow: 1px 1px 1px #000000;">
                         <h2>Your cart is empty. </h2>
-                        <ol style="margin: 20px; list-style-type: none">
-                                <li><input type="checkbox" id="zingerburger" value="zingerburger"> <span>&nbsp; &nbsp;
-                                                Zinger
-                                                Burger &nbsp; &nbsp; $5.99</span></li>
-                                <li><input type="checkbox" id="bunkabab" value="bunkabab"> <span> &nbsp; &nbsp; Bun
-                                                Kabab &nbsp;
-                                                &nbsp; $5.99</span></li>
-                        </ol>
-                        <input type="submit" value="Submit" class="submitButtonCart" onclick="pickupAtTheStore()" />
+                        <div style="visibility: hidden; margin: 10px">
+                                hidden div
+                        </div>
+                        <table>
+                                <thead>
+                                        <tr>
+                                                <th></th>
+                                                <th>Item</th>
+                                                <th>Price</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td><input type="checkbox" id="bunkababcheckbox" value="5.99" onchange="changePrice()"></td>
+                                                <td>Zinger Burger</td>
+                                                <td>$5.99</td>
+                                        </tr>
+                                        <tr>
+                                                <td><input type="checkbox" id="zingerburgercheckbox" value="6.99" onchange="changePrice()"></td>
+                                                <td>Bun Kabab</td>
+                                                <td>$6.99</td>
+                                        </tr>
+                                </tbody>
+                        </table>
+
+                        <div style="font-size: 20px;">
+                                Total: <input type="text" id="totalprice" size="20px" style="line-height: 20px; margin-left: 10px; text-align:right;" />
+                        </div>
+                        <div style="margin-top: 20px;">
+                                <input type="submit" value="Submit" class="submitButtonCart"
+                                        onclick="pickupAtTheStore()" />
+                        </div>
                 </div>
+
 
                 <div style="float: right">
 
@@ -78,21 +103,7 @@
                         <br />
                         <br />
                         <br />
-                        ek
-                        2
-                        3
-                        <br />
-                        <br />
-                        ek
-                        2
-                        3
-                        <br />
-                        <br />
-                        ek
-                        2
-                        3
-                        <br />
-                        <br />
+
                 </div>
 
 
@@ -111,8 +122,6 @@
                                 <nav>
                                         <a href="">HOME</a>
                                         <a href="">MENU</a>
-                                        <a href="">CART</a>
-                                        <a href="">CONTACT</a>
                                 </nav>
                         </div>
                         <div id="headerdivrightsidenavbar4" style="float: left; visibility: visible;">
@@ -135,12 +144,12 @@
                         <div id="headerdivrightsidenavbar6" style="float: left; visibility: hidden;">
                                 <nav>
                                         <a href="">HOME</a>
-                                        <a href="">MENU</a>
-                                        <a href="">CART</a>
                                 </nav>
                         </div>
                         <div>
-                                <img src="images/creditcardpicture" alt="">
+                                <a href="#">
+                                        <img src="images/creditcardpicture" alt="">
+                                </a>
                         </div>
                 </footer>
         </div>

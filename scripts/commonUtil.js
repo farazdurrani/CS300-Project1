@@ -45,25 +45,32 @@ function showOfferOnWeekdays() {
 //called when placing an order on cart.html
 //A function that shows alert on the items that are ordered by the user.
 function pickupAtTheStore() {
-    var zinger = document.getElementById('zingerburger').checked;
-    var bunkabab = document.getElementById('bunkabab').checked;
+    var zinger = document.getElementById('zingerburgercheckbox').checked;
+    var bunkabab = document.getElementById('bunkababcheckbox').checked;
     var content = '';
     var count = 0;
     if (zinger) {
         count++;
-        content += 'Zinger Burger will be ready for pickup after 15 minutes of placing this order \n';
+        content += 'Zinger Burger';
     }
 
     if (bunkabab) {
         count++;
-        content += 'Bun Kabab will ready for pickup after 15 minutes of placing this order \n';
+        content += 'Bun Kabab \n';
     }
+
+    content += 'will ready for pickup after 15 minutes of placing this order\n';
+
+    content += 'Total Price: ' + checkPrice() + '\n'   ;
+
+
 
     if (count > 0) {
         content += 'Order Number: ' + new Date().getTime();
         alert(content);
-        document.getElementById('zingerburger').checked = false;
-        document.getElementById('bunkabab').checked = false;
+        document.getElementById('zingerburgercheckbox').checked = false;
+        document.getElementById('bunkababcheckbox').checked = false;
+        document.getElementById('totalprice').value = 0; 
     }
 }
 
@@ -81,3 +88,43 @@ $( document ).ready(function() {
     });
 });
 
+function changePrice(){
+    var zingerburgerprice = Number(document.getElementById('zingerburgercheckbox').value);
+    var bunkababprice = Number(document.getElementById('bunkababcheckbox').value);
+
+    var zbcb = document.getElementById('zingerburgercheckbox').checked;
+    var bkcb = document.getElementById('bunkababcheckbox').checked;
+
+    var pprice = 0;
+
+    if(zbcb){
+        pprice += zingerburgerprice;
+    }
+
+    if(bkcb){
+        pprice += bunkababprice;
+    }
+    document.getElementById('totalprice').value = pprice;
+
+    return pprice;
+}
+
+function checkPrice(){
+    var zingerburgerprice = Number(document.getElementById('zingerburgercheckbox').value);
+    var bunkababprice = Number(document.getElementById('bunkababcheckbox').value);
+
+    var zbcb = document.getElementById('zingerburgercheckbox').checked;
+    var bkcb = document.getElementById('bunkababcheckbox').checked;
+
+    var pprice = 0;
+
+    if(zbcb){
+        pprice += zingerburgerprice;
+    }
+
+    if(bkcb){
+        pprice += bunkababprice;
+    }
+
+    return pprice;
+}
