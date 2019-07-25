@@ -1,8 +1,13 @@
 /* Faraz Durrani */
 
+
+#container {
+    margin-left: 70px;
+    margin-right: 70px; 
+}
+
 body {
     background-color: rgb(231,147,35);
-    font-family: "Times New Roman", Times, serif;
 }
 #headerdiv {
     width: 90%;
@@ -10,7 +15,11 @@ body {
     padding: 25px 5%;
     /* position: fixed; */
     /* z-index: 10; */
-    background-color: rgb(255,234,171);
+    /* background-color: rgb(255,234,171); */
+    background-image: url('../images/headerbackground.jpg') !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Droid Sans, sans-serif;
 }
 
 #headerdivleftsideimg {
@@ -75,4 +84,21 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+#headerdivrightsidenavbar1 a:hover { 
+    background:rgb(210, 32, 48); 
+    padding: 10px; 
+    color: white !important;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#headerdivrightsidenavbar4 a:hover { 
+    color: white !important;
+    text-shadow: 1px 1px 1px #000000;
+}
+#headerdivrightsidenavbar4 a {
+    text-decoration: none;
+    margin: 30px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif
 }

@@ -26,8 +26,10 @@ function validateForm() {
 //Called on body onload in home.html
 //A function that just shows a line when body loads. This page has nothing worthy to change.
 function showPizzaLine() {
-    document.getElementById('comeforpizza').innerHTML = '<i>Come for pizza - stay for the wings!' +
+    document.getElementById('comeforpizza').innerHTML = '<i>Come for pizza - stay for the wings! <br />' +
         'Best known for our finest ingredients and Gourmet Pizza.</i>';
+    document.getElementById('comeforpizza').style.fontFamily=  "'Trebuchet MS', Helvetica, sans-serif";
+    document.getElementById('comeforpizza').style.textShadow = "1px 1px 1px #000000";
 }
 
 //called on body onload in menu.html"
@@ -73,5 +75,9 @@ $( document ).ready(function() {
     if(date.getHours() == 9 || date.getHours() == 10){
         $("#headerdiv").append("<h3 style=\"color: red;\"> For right now only! 15 % extra off your order!</h3>");
     }
+    $('.slider').bxSlider({
+        pager: false,
+        auto: true,
+    });
 });
 
