@@ -33,7 +33,14 @@
                         </div>
                 </div>
 
-                <div style="color: white; margin-top: 50px; margin-left: 50px; font-size: 30px">
+                <div id="googlemapdiv" style="float: right; margin-top: 50px;">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11855.78858505622!2d-88.08932300915114!3d42.022866228722734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faed807798ac3%3A0x675c1a31b1aa98ce!2sMama+Maria+Pizza+and+More!5e0!3m2!1sen!2sus!4v1564022424293!5m2!1sen!2sus"
+                                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div
+                        style="color: white; margin-top: 50px; font-family: 'Trebuchet MS', Helvetica, sans-serif; margin-left: 50px; font-size: 25px; text-shadow: 1px 1px 1px #000000;">
                         <ol style="list-style-type:none;">
                                 <li>Phone Number # 800-420-9211</li>
                                 <li>Email - bestburgers@chicago.org</li>
@@ -41,16 +48,18 @@
                         </ol>
                 </div>
 
-                <div id="formdiv" style="color: white; margin-top: 50px; margin-left: 50px; font-size: 20px">
+                <div id="formdiv"
+                        style="color: white; text-shadow: 1px 1px 1px #000000; font-family: 'Trebuchet MS', Helvetica, sans-serif; margin-top: 50px; margin-left: 50px; font-size: 20px">
                         <h4>To Send a message directly, fill out the form below:</h4>
                         <form method="GET" action="menu.html" onsubmit="return validateForm()">
                                 <div>
                                         <br />
                                         Name: <br />
-                                        <input type="text" id="contactName" size="30">
+                                        <input type="text" id="contactName" size="30" style="line-height: 30px;">
                                         <br />
                                         Email: <br />
-                                        <input type="email" id="contactEmail" size="30" required>
+                                        <input type="email" id="contactEmail" size="30" required
+                                                style="line-height: 30px;">
                                         <br />
                                         Message: <br />
                                         <textarea id="contactMessage" cols="30" rows="10"></textarea>
@@ -63,7 +72,6 @@
                                 </div>
                         </form>
                 </div>
-
                 <footer id=footerdiv
                         style="background-color: black; height: 100px; margin-left: 30px; margin-right: 30px">
                         <div id="headerdivrightsidenavbar2" style="float: left; visibility: hidden;">
